@@ -7,6 +7,7 @@ def test_site_path_import_module1(parse):
     # from pathlib import Path
 
     site = parse("site")
+    site.message
     assert site.success, site.message
 
     path_import = "Path" in site.get_from_import("pathlib")
