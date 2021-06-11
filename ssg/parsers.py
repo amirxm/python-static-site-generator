@@ -28,5 +28,3 @@ class ResourceParser(Parser):
 
     def parse(self, path: Path, source: Path, dest: Path):
         super().copy(path, source, dest)
-
-
